@@ -3,5 +3,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "docs",
   "attachmentFolderPath": "assets/images",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
 }
