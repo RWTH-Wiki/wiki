@@ -42,4 +42,12 @@ RWTH Online 支持的 MFA 形式包括：
 
 ### 密码学硬件 WebAuthn 验证
 
-若想使用此验证方式，需要持有支持 FIDO 的密码学硬件
+若想使用此验证方式，需要持有支持 FIDO 的密码学硬件。
+
+> 参见： https://sspai.com/post/78479, https://www.microsoft.com/zh-cn/security/business/security-101/what-is-fido2?msockid=2e86fcb9d398629d24a4eac0d2966303
+
+配置好密码学硬件的 FIDO 模块并设置 FIDO PIN 后，即可将密码学硬件插入电脑，并选择创建`Hardware token for RWTH Single Sign-On (WebAuthn/FIDO2)`，在键入描述后点击`REGISTER`即可启动 WebAuthn 验证，在浏览器弹出的窗口中输入 FIDO PIN 后，触摸密码学硬件的确认区域即可完成添加。
+
+此后，在登录账号后要求 MFA 时，即可选择 WebAuthn 验证方式，将密码学硬件插入设备，输入 FIDO PIN 并触摸确认区域即可完成验证。
+
+> WebAuthn 功能需要浏览器支持，目前市面上主流的浏览器 Chrome, Safari, Firefox, Edge 等均支持 WebAuthn。
