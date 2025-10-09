@@ -1,6 +1,8 @@
 ---
 title: Welcome to RWTH Wiki
 description: Welcome to RWTH Wiki - an information integration site for RWTH Aachen students!
+tags:
+  - welcome
 ---
 
 ## Welcome to RWTH Wiki 🥳
