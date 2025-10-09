@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/RWTH-Online-Account/配置 MFA.md
 ---
 title: 配置 MFA
 description: RWTH Online 强制要求 MFA，正确地配置对日后登陆账号、访问相关资源等至关重要。
@@ -5,6 +6,9 @@ tags:
   - MFA
   - 多因素认证
 ---
+=======
+RWTH Online 强制要求 MFA，正确地配置对日后登陆账号、访问相关资源等至关重要。
+>>>>>>> 8e03f4f (vault backup: 2025-10-09 19:07:39):docs/RWTH Online Account/MFA.md
 
 ## 什么是 MFA？
 
