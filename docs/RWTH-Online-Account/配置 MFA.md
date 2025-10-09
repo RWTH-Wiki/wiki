@@ -1,4 +1,10 @@
-RWTH Online 强制要求 MFA，正确地配置对日后登陆账号、访问相关资源等至关重要。
+---
+title: 配置 MFA
+description: RWTH Online 强制要求 MFA，正确地配置对日后登陆账号、访问相关资源等至关重要。
+tags:
+  - MFA
+  - 多因素认证
+---
 
 ## 什么是 MFA？
 
