@@ -1,5 +1,5 @@
 ---
-title: "配置MFA"
+title: "配置 MFA"
 description: "RWTH Online 强制要求 MFA，正确地配置对日后登陆账号、访问相关资源等至关重要。"
 ---
 
