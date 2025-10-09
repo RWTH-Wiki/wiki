@@ -1,7 +1,3 @@
----
-title: "Welcome to RWTH Wiki"
-description: "Welcome to RWTH Wiki - an information integration site for RWTH Aachen students!"
----
 
 ## Welcome to RWTH Wiki 🥳
 
