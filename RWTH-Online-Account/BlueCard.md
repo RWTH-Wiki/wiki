@@ -4,3 +4,6 @@ description: "及时申领 Blue Card 学生卡，此卡可用于证明自己的�
 ---
 
 ## 申领
+
+
+[[home]]
