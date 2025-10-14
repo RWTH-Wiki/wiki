@@ -2,7 +2,6 @@
 title: "配置 MFA"
 description: "RWTH Online 强制要求 MFA，正确地配置对日后登陆账号、访问相关资源等至关重要。"
 ---
-
 ## 什么是 MFA？
 
 多因素身份验证（MFA）是一种验证[用户身份](https://www.cloudflare-cn.com/learning/access-management/what-is-identity/)的方式，比传统的用户名与密码组合更加安全。MFA 通常包含一个密码，但同时也包含一个或两个其他身份验证因素。[双因素身份验证 (2FA)](https://www.cloudflare-cn.com/learning/access-management/what-is-two-factor-authentication/) 是 MFA 的一种。

@@ -18,7 +18,7 @@ vpn.rwth-aachen.de
 
 RWTH Aachen 的 VPN 使用 OTP（一次性密码） 进行 MFA，即：`TAN list`, `Authenticator app e.g. for smartphone (TOTP)` 和 `Hardware Token for VPN and RWTH Single Sign-On (HOTP)` 三种方式，此三种方式均可按照 IdM 中的提示自行配置。
 
-在客户端界面输入 VPN 地址，输入正确的用户名和密码后，会要求输入一个一次性密码，此即为 MFA 中配置的 HOTP/TOTP/TAN。输入正
+在客户端界面输入 VPN 地址，输入正确的用户名和密码后，会要求输入一个一次性密码，此即为 MFA 中配置的 HOTP/TOTP/TAN。输入所有正确的信息后即可连接成功，设备会获取一个 `172.21.0.0/16` 网段的内网 ip。
 
 ## 客户端
 
@@ -28,4 +28,24 @@ RWTH Aachen 的 VPN 使用 OTP（一次性密码） 进行 MFA，即：`TAN list
 
 ### Windows
 
-直接下载 [cisco-secure-client-win-5.1.8.122-core-vpn-webdeploy-k9.msi](https://webspace.noc.rwth-aachen.de/shib/Cisco_Anyconnect/cisco-secure-client-win-5.1.8.122-core-vpn-webdeploy-k9.msi) 并安装运行即可
+直接下载 [cisco-secure-client-win-5.1.8.122-core-vpn-webdeploy-k9.msi](https://webspace.noc.rwth-aachen.de/shib/Cisco_Anyconnect/cisco-secure-client-win-5.1.8.122-core-vpn-webdeploy-k9.msi) 并安装运行即可。
+
+### Linux (Ubuntu)
+
+> 参见：https://help.itc.rwth-aachen.de/en/service/vbf6fx0gom76/article/6a2cfd0933604cd28eaaa69194ff8d16/
+
+### Linux (ArchLinux)
+
+ArchLinux AUR: [cisco-secure-client](https://aur.archlinux.org/pkgbase/cisco-secure-client)
+
+需要启动系统服务 vpnagentd.service，否则 Cisco Secure Client 无法访问 VPN 服务：
+
+```bash
+sudo systemctl enable vpnagentd.service
+sudo systemctl start vpnagentd.service
+sudo systemctl status vpnagentd.service  # 查看启动状态
+```
+
+### MacOS
+
+> 参见：https://help.itc.rwth-aachen.de/en/service/vbf6fx0gom76/article/35d4a399d2984c1f8d3e364e87c366dd/
